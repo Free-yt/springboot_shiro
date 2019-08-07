@@ -1,0 +1,23 @@
+#改写web服务器端口
+#springboot默认的内嵌web容器为tomcat
+server:
+  port: 1234
+  address: localhost
+
+spring:
+  #springboot 数据源配置
+  datasource:
+    #数据源的类型说明 springboot默认加载HikariDataSource、dbcp2数据眼所以type属性可写可不写
+    #如果使用的不是springboot默认支持的数据源连接类型，这是必须要写type属性值
+    #type: com.zaxxer.hikari.HikariDataSource
+    #设置数据库连接池名称
+    #name: TestHikariDataSourcePool
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis?rewriteBatchedStatements=true&serverTimezone=Asia/Shanghai&characterEncoding=utf8
+    username: root
+    password: 153410
+    type: com.alibaba.druid.pool.DruidDataSource
+#mybatis:
+#  mapper-locations: classpath*:mapper/*Mapper.xml
+mybatis:
+  type-aliases-package: com.springboot.entity

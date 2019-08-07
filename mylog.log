@@ -1,0 +1,83 @@
+2019-07-30 14:52:46.871  INFO 11284 --- [restartedMain] com.springboot.Application               : Starting Application on LAPTOP-ISRARUFK with PID 11284 (started by yitao in D:\IDEA Projects\springbootshiro)
+2019-07-30 14:52:46.872 DEBUG 11284 --- [restartedMain] com.springboot.Application               : Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2019-07-30 14:52:46.872  INFO 11284 --- [restartedMain] com.springboot.Application               : No active profile set, falling back to default profiles: default
+2019-07-30 14:52:46.874  INFO 11284 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@218e6624: startup date [Tue Jul 30 14:52:46 CST 2019]; root of context hierarchy
+2019-07-30 14:52:47.185  INFO 11284 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.springboot.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$8e761b1f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-30 14:52:47.197  INFO 11284 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'userRealm' of type [com.springboot.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-30 14:52:47.198  INFO 11284 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-30 14:52:47.282  INFO 11284 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 1234 (http)
+2019-07-30 14:52:47.283  INFO 11284 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-30 14:52:47.283  INFO 11284 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2019-07-30 14:52:47.319  INFO 11284 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-30 14:52:47.321  INFO 11284 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 447 ms
+2019-07-30 14:52:47.350  INFO 11284 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-07-30 14:52:47.350  INFO 11284 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-30 14:52:47.351  INFO 11284 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-30 14:52:47.351  INFO 11284 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-30 14:52:47.351  INFO 11284 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-30 14:52:47.351  INFO 11284 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'getShiroFilterFactoryBean' to: [/*]
+2019-07-30 14:52:47.410  INFO 11284 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@218e6624: startup date [Tue Jul 30 14:52:46 CST 2019]; root of context hierarchy
+2019-07-30 14:52:47.417  INFO 11284 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/add]}" onto public java.lang.String com.springboot.controller.userController.add()
+2019-07-30 14:52:47.417  INFO 11284 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update]}" onto public java.lang.String com.springboot.controller.userController.update()
+2019-07-30 14:52:47.418  INFO 11284 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.springboot.controller.userController.Controller()
+2019-07-30 14:52:47.418  INFO 11284 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public java.lang.String com.springboot.controller.userController.login()
+2019-07-30 14:52:47.418  INFO 11284 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logingo]}" onto public java.lang.String com.springboot.controller.userController.logingo(java.lang.String,java.lang.String,org.springframework.ui.Model)
+2019-07-30 14:52:47.418  INFO 11284 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thy]}" onto public java.lang.String com.springboot.controller.userController.Thymeleaf(org.springframework.ui.Model)
+2019-07-30 14:52:47.420  INFO 11284 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-30 14:52:47.421  INFO 11284 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-30 14:52:47.428  INFO 11284 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-30 14:52:47.428  INFO 11284 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/*] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-30 14:52:47.439  INFO 11284 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-30 14:52:47.456  WARN 11284 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-07-30 14:52:47.484  WARN 11284 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'classPathFileSystemWatcher' defined in class path resource [org/springframework/boot/devtools/autoconfigure/LocalDevToolsAutoConfiguration$RestartConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.devtools.classpath.ClassPathFileSystemWatcher]: Factory method 'classPathFileSystemWatcher' threw exception; nested exception is java.lang.IllegalArgumentException: Folder 'D:\IDEA Projects\springbootshiro\src\main\webapp' must exist and must be a directory
+2019-07-30 14:52:47.484  INFO 11284 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-07-30 14:52:47.485  INFO 11284 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-07-30 14:52:47.494  INFO 11284 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-07-30 14:52:47.510 ERROR 11284 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'classPathFileSystemWatcher' defined in class path resource [org/springframework/boot/devtools/autoconfigure/LocalDevToolsAutoConfiguration$RestartConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.devtools.classpath.ClassPathFileSystemWatcher]: Factory method 'classPathFileSystemWatcher' threw exception; nested exception is java.lang.IllegalArgumentException: Folder 'D:\IDEA Projects\springbootshiro\src\main\webapp' must exist and must be a directory
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.springboot.Application.main(Application.java:13) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.devtools.classpath.ClassPathFileSystemWatcher]: Factory method 'classPathFileSystemWatcher' threw exception; nested exception is java.lang.IllegalArgumentException: Folder 'D:\IDEA Projects\springbootshiro\src\main\webapp' must exist and must be a directory
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	... 23 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Folder 'D:\IDEA Projects\springbootshiro\src\main\webapp' must exist and must be a directory
+	at org.springframework.util.Assert.isTrue(Assert.java:92) ~[spring-core-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher.addSourceFolder(FileSystemWatcher.java:124) ~[spring-boot-devtools-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration.newFileSystemWatcher(LocalDevToolsAutoConfiguration.java:160) ~[spring-boot-devtools-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration.access$000(LocalDevToolsAutoConfiguration.java:102) ~[spring-boot-devtools-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration$1.getFileSystemWatcher(LocalDevToolsAutoConfiguration.java:143) ~[spring-boot-devtools-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.devtools.classpath.ClassPathFileSystemWatcher.<init>(ClassPathFileSystemWatcher.java:61) ~[spring-boot-devtools-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration.classPathFileSystemWatcher(LocalDevToolsAutoConfiguration.java:120) ~[spring-boot-devtools-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	... 24 common frames omitted
+

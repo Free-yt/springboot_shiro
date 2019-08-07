@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>测试thymeleaf的使用</title>
+</head>
+<body>
+<h3 th:text = "${name}"></h3>
+<h3 th:text = "${session.token}"></h3>
+<div shiro:hasPermission="1">
+    进入用户添加<a href="add">用户添加</a>
+</div>
+<div shiro:hasPermission="2">
+进入用户更新<a href="update">用户更新</a>
+</div>
+</body>
+</html>
